@@ -1,0 +1,14 @@
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+
+# ignore data files
+*.csv
+*.xls
+*.xlsx
+*.rda
+*.rds
+
+# ignore rsconnect folder
+rsconnect

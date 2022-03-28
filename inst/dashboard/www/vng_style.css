@@ -1,0 +1,272 @@
+@font-face {
+  src: url(www/fonts/source-sans-pro-latin-400-normal.woff2);
+  font-family: "Source Sans Pro";
+}
+
+@font-face {
+  src: url(www/fonts/source-sans-pro-latin-600-normal.woff2);
+  font-family: "Source Sans Pro";
+  font-weight: 600;
+}
+
+@font-face {
+  src: url(www/fonts/source-sans-pro-latin-700-normal.woff2);
+  font-family: "Source Sans Pro";
+  font-weight: bold;
+}
+
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 16px;
+  line-height: 150%;
+  color: #212121;
+}
+
+#loading-content {
+  position: absolute;
+  background: #000000;
+  opacity: 0.9;
+  z-index: 100;
+  left: 0;
+  right: 0;
+  height: 100%;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+/* Lettertypen */
+h1 {
+  font-size: 32px;
+  font-weight: bold;
+  line-height: 125%;
+  margin-top: 0;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 125%;
+  margin-top: 0;
+}
+
+h3 {
+  margin-top: 0;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 125%;
+}
+
+.small_text {
+  font-size: 14px;
+  color: #757575;
+}
+
+.uiPanel label {
+  font-size: 14px;
+  font-weight: normal;
+  color: #212121;
+}
+
+
+hr {
+  border-top: 1px solid #BDBDBD;
+}
+
+
+/* Om het flitsen bij het opnieuw tekenen tegen te gaan */
+
+
+.recalculating {
+  opacity: 1.0;
+}
+
+
+/* Voor een vaste header en een scroll-bar bij de bottom Panel */
+
+.table {
+  display: table;
+}
+
+.table-row {
+  display: table-row;
+}
+
+.table-cell {
+  display: table-cell;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  background: green;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.header {
+  background: #1A237E;
+  color: white;
+  background-image: url("www/Pattern_Copy_2.svg");
+  background-size: auto 100%;
+}
+
+.body {
+  background: #E0F2F1;
+  height: 100%;
+}
+
+.body-content-outer-wrapper {
+  height: 100%;
+}
+
+.body-content-inner-wrapper {
+  height: 100%;
+  position: relative;
+  overflow: auto;
+}
+
+.body-content {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+
+/* Aanpassen van de knoppen */
+
+
+.btn-primary {
+  background-color: #E0F2F1;
+  border-color: #BDBDBD;
+  color: #212121;
+  font-weight: bold;
+}
+
+.btn-primary.active {
+  background-color: #1A237E;
+  border-color: #1A237E;
+  color: white;
+  font-weight: bold;
+}
+
+.btn-primary:hover {
+  background-color: #CFE4E3;
+  border-color: #BDBDBD;
+  color: #212121;
+}
+
+.btn-primary.active:hover {
+  background-color: #12195D;
+}
+
+.btn-primary:active:hover {
+  background-color: #C1D8D7;
+  border-color: #BDBDBD;
+  color: #212121;
+}
+
+.btn-primary.active:active:hover {
+  background-color: #141B5D;
+}
+
+
+.plusmin-button {
+  border-color: #1A237E !important;
+}
+
+
+.plus-btn {
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  color: #1A237E;
+}
+
+.min-btn {
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  color: #1A237E;
+}
+
+
+/* datatable buttons */
+
+.dt-button {
+  margin: 0 !important;
+  padding: 6px 12px !important;
+  border-radius: 4px !important;
+}
+
+
+.text-panel {
+  display: inline-block;
+  border: 1px solid;
+  border-color: rgb(204, 204, 204);
+  background: white;
+  height: 34px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+
+/* Toevoegen van witte panelen met afgeronde hoeken */
+
+.headerbox {
+  margin: 32px auto;
+  max-width: 1600px;
+}
+
+.colofonbox {
+  margin: 32px auto;
+  max-width: 1600px;
+}
+
+
+.mainPanel {
+  margin: 24px auto 0;
+  padding: 0px;
+  max-width: 1600px;
+}
+
+.box {
+  background: white;
+  padding: 32px;
+  border-radius: 8px;
+  margin: 24px auto 0;
+}
+
+.toelichtingbox {
+  background: white;
+  padding: 32px;
+  border-radius: 8px;
+  margin: 24px auto 0;
+  max-width: 1280px;
+}
+
+.colofonPanel {
+  background: #1A237E;
+  color: white;
+  padding: 24px 0px 24px 0px;
+}
+
+
+
+
+/* datatables */
+
+table.dataTable tbody td {
+  padding: 12px 8px;
+  border-top: 1px solid transparant;
+}
+
+table.dataTable thead th {
+  padding: 12px 8px;
+  border-color: transparant;
+}
+
+
+table.dataTable tbody tr.selected td {
+  background-color: #E0F2F1 !important;
+}
+

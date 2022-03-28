@@ -1,0 +1,17 @@
+Package: statline
+Title: The package provides a dashboard to search the statline database
+Version: 0.0.0.9000
+Authors@R: 
+    person("Hans", "Weda", , "hans.weda@vng.nl", role = c("aut", "cre"),
+           comment = c(ORCID = "YOUR-ORCID-ID"))
+Description: What the package does (one paragraph).
+License: CC BY-NC-SA 4.0
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.2
+Imports: 
+    cbsodataR,
+    DT,
+    magrittr,
+    shiny,
+    shinyjs
