@@ -23,7 +23,7 @@ topbarPanel <- function() {
         ),
         div(
           style = "overflow: hidden; padding-left: 24px;",
-          h1("CBS statline searchtool")
+          h1("CBS statline searchtool - under development!")
         )
       ),
       div(

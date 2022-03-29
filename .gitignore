@@ -12,3 +12,8 @@
 
 # ignore rsconnect folder
 rsconnect
+
+# ignore image files
+*.png
+*.jpg
+*.jpeg

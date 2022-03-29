@@ -13,5 +13,6 @@ Imports:
     cbsodataR,
     DT,
     magrittr,
+    pkgload,
     shiny,
     shinyjs
