@@ -95,6 +95,9 @@ run_app <- function(...) {
   ui <- fillPage(
     tags$head(tags$title("CBS statline searchtool")),
     tags$head(tags$link(rel="shortcut icon", href="www/favicon.ico")),
+    # Include tracking code ----
+    tags$head(includeHTML(file.path(www, "geitjes-analytics.html"))),
+
     tags$head(
       # Note the wrapping of the string in HTML()
       # To set the search boxes in the datatable to 100px explicitly
