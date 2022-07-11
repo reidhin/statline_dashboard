@@ -27,17 +27,28 @@ Dit is experimentele code in de testfase waar nog aan gewerkt wordt!
 
 ## Installation
 
-There is no released version of this package yet...
+Het pakket 'statline' kan geïnstalleerd worden vanuit GitLab als:
+
+```{r installation, eval=FALSE}
+
+# Install the development version from GitLab
+devtools::install_gitlab("commondatafactory/datascience/statline-dashboard")
+
+
+```
+
+Na installatie van het pakket kan het dashboard worden gedraaid door `run_app()` uit te voeren, zie voorbeeld hieronder.
 
 ## Example
 
 You can start the dashboard by:
 
-```{r example}
+```{r example, eval=FALSE}
 library(statline)
 
 # Launch the dashboard
 run_app()
+
 
 ```
 

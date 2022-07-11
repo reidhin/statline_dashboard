@@ -15,7 +15,15 @@ Dit is experimentele code in de testfase waar nog aan gewerkt wordt!
 
 ## Installation
 
-There is no released version of this package yet…
+Het pakket ‘statline’ kan geïnstalleerd worden vanuit GitLab als:
+
+``` r
+# Install the development version from GitLab
+devtools::install_gitlab("commondatafactory/datascience/statline-dashboard")
+```
+
+Na installatie van het pakket kan het dashboard worden gedraaid door
+`run_app()` uit te voeren, zie voorbeeld hieronder.
 
 ## Example
 
@@ -26,12 +34,7 @@ library(statline)
 
 # Launch the dashboard
 run_app()
-#> Loading required package: shiny
-#> 
-#> Listening on http://127.0.0.1:7389
 ```
-
-<img src="man/figures/README-example-1.png" width="100%" />
 
 ## Licentie
 
