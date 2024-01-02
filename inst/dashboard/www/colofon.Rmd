@@ -1,0 +1,7 @@
+This Shiny App contains an easily searchable table of all datasets available on [statline](https://opendata.cbs.nl/statline/#/CBS/).
+
+The work can be considered a fork of the original project executed at the [VNG](https://vng.nl/).
+The source code is available on [Github](https://github.com/reidhin/statline-dashboard).
+The original work can be found on [Gitlab](https://gitlab.com/commondatafactory/datascience/statline-dashboard).
+
+Created by Hans Weda &copy;

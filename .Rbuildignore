@@ -5,3 +5,4 @@
 ^app\.R$
 ^rsconnect$
 ^README\.Rmd$
+^LICENSE\.md$

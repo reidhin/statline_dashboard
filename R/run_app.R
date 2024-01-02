@@ -17,7 +17,7 @@
 run_app <- function(...) {
   # This is the statline dashboard
 
-  ##################################### Data preparatie #############################################
+  ##################################### Data preparation #############################################
   # get all catalogs
   df <- cbsodataR::cbs_get_datasets(catalog=NULL)
 
@@ -53,10 +53,10 @@ run_app <- function(...) {
   # merge
   df <- merge(df, base_urls)
 
-  # link
+  # create link
   df[["link"]] <- do.call(sprintf, c(df[c("base_url", "Language", "Identifier")], "%s%s/dataset/%s"))
 
-  # hyperlink
+  # create hyperlink
   df$Identifier <- paste0(
     "<a href='", df$link, "' target='_blank' rel='noopener noreferrer'>",
     df$Identifier,
@@ -85,6 +85,7 @@ run_app <- function(...) {
     )
   ]
 
+  # find and add www-path
   www <- system.file(file.path("dashboard", "www"), package="statline")
 
   addResourcePath("www", system.file(file.path("dashboard", "www"), package="statline"))
@@ -94,9 +95,7 @@ run_app <- function(...) {
 
   ui <- fillPage(
     tags$head(tags$title("CBS statline searchtool")),
-    tags$head(tags$link(rel="shortcut icon", href="www/favicon.ico")),
-    # Include tracking code ----
-    tags$head(includeHTML(file.path(www, "geitjes-analytics.html"))),
+    tags$head(tags$link(rel="shortcut icon", href="www/favicon.png")),
 
     tags$head(
       # Note the wrapping of the string in HTML()
@@ -107,7 +106,7 @@ run_app <- function(...) {
       }"))
     ),
     shinyjs::useShinyjs(),
-    includeCSS(file.path(www, "vng_style.css")),
+    includeCSS(file.path(www, "reidhin_style.css")),
     div(
       class="table container",
       topbarPanel(),
@@ -167,6 +166,9 @@ run_app <- function(...) {
 
     # create a table proxy
     proxy_statline_table <- DT::dataTableProxy("statline_table")
+
+    # launch colofon when clicked
+    observeEvent(input$colofon_link, showModal(modal_colofon(file.path(www, "colofon.Rmd"))))
   }
 
   ######################################## application ##########################################

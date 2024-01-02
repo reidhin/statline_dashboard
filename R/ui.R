@@ -13,23 +13,32 @@ topbarPanel <- function() {
       div(
         class="linker_header",
         style="float: left;",
-        actionLink(
-          "logo",
-          img(
-            src = "www/logo_vng_gs.png",
-            alt = "VNG Logo",
-          ),
-          style = "float: left;"
+        div(
+          style = "float: left;",
+          actionLink(
+            "logo",
+            img(
+              src = "www/favicon.png",
+              alt = "Reidhin",
+            ),
+          )
         ),
         div(
           style = "overflow: hidden; padding-left: 24px;",
-          h1("CBS statline searchtool - under development!")
+          div(
+            h1("CBS statline searchtool")
+          ),
         )
       ),
       div(
         class="rechter_header",
         style="float: right; display: flex; align-items: flex-end; justify-content: right;",
-
+        actionLink(
+          "colofon_link",
+          "Colofon & explanation",
+          style="margin-left: 40px; color: white; text-decoration: underline;",
+          icon = icon("info-circle")
+        )
       ),
       div(
         style="clear: both;"
@@ -55,8 +64,7 @@ mainPanel <- function() {
               class="box hoofdPanel",
               DT::DTOutput("statline_table")
             )
-          ),
-          colofonPanel()
+          )
         )
       )
     )
@@ -65,31 +73,3 @@ mainPanel <- function() {
 
 
 
-colofonPanel <- function() {
-  div(
-    class = "colofonPanel",
-    style = "margin-top: 80px;",
-    div(
-      class = "colofonbox",
-      style = "justify-content: center; display: flex; align-items: center;",
-      div(
-        img(
-          src = "www/logo_vng_gs.svg",
-          alt = "VNG Logo",
-          style = "height: 32px; margin-right: 8px;"
-        )
-      ),
-      div(
-        span("Ontwikkeld in opdracht van VNG")
-      ),
-      div(
-        actionLink(
-          "colofon_link",
-          "Colofon & uitleg",
-          style="margin-left: 40px; color: white; text-decoration: underline;",
-          icon = icon("info-circle")
-        )
-      )
-    )
-  )
-}
