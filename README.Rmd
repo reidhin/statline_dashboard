@@ -57,6 +57,7 @@ run_app()
 
 ## Project structure
 
+```
 ├── app.R                         <- Script to correctly start the app in shinyapps.io
 ├── DESCRIPTION                   <- Project description
 ├── inst
@@ -75,6 +76,7 @@ run_app()
 ├── README.Rmd                    <- readme file with explanation on this package
 ├── rsconnect                     <- Folder with files needed to publish the app on shinyapps.io
 └── statline.Rproj
+```
 
 ## Licentie
 
