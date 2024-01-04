@@ -7,7 +7,8 @@
 <!-- badges: end -->
 
 The goal of statline is to provide a dashboard to easily search the
-[statline](https://opendata.cbs.nl/statline/#/CBS/) database.
+[statline](https://opendata.cbs.nl/statline/#/CBS/) database. The app
+has been published on <https://reidhin.shinyapps.io/statline/>
 
 In my opinion the statline website does not offer effective tools to
 search the database. Therefore I have created this package that contains
@@ -38,7 +39,7 @@ After installation the package can be executed by the command
 
 ## Example
 
-You can start the dashboard by:
+After installation you can start the dashboard by:
 
 ``` r
 library(statline)

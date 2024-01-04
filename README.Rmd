@@ -19,7 +19,7 @@ knitr::opts_chunk$set(
 <!-- badges: end -->
 
 The goal of statline is to provide a dashboard to easily search the [statline](https://opendata.cbs.nl/statline/#/CBS/) 
-database.
+database. The app has been published on [https://reidhin.shinyapps.io/statline/](https://reidhin.shinyapps.io/statline/)
 
 In my opinion the statline website does not offer effective tools to search the database. Therefore I have created this package
 that contains a shiny dashboard. The dashboard uses the [CBS api](https://cran.r-project.org/web/packages/cbsodataR/vignettes/cbsodata.html) 
@@ -44,7 +44,7 @@ After installation the package can be executed by the command `run_app()`, see e
 
 ## Example
 
-You can start the dashboard by:
+After installation you can start the dashboard by:
 
 ```{r example, eval=FALSE}
 library(statline)
