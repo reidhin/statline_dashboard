@@ -52,7 +52,6 @@ library(statline)
 # Launch the dashboard
 run_app()
 
-
 ```
 
 ## Project structure
