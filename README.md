@@ -49,16 +49,24 @@ run_app()
 
 ## Project structure
 
-├── app.R \<- Script to correctly start the app in shinyapps.io ├──
-DESCRIPTION \<- Project description ├── inst │ └── dashboard │ └── www
-\<- Folder with style-files, javascript and favicon ├── LICENSE.md \<-
-License ├── man \<- Help-files with explanation of all functions in this
-package │ └── run_app.Rd ├── NAMESPACE ├── NEWS.md ├── R │ ├── run_app.R
-\<- main function that starts the (dashboard) app │ ├── ui.R \<-
-functions for the user interface │ └── util_modals.R \<- functions for
-the modals ├── README.md ├── README.Rmd \<- readme file with explanation
-on this package ├── rsconnect \<- Folder with files needed to publish
-the app on shinyapps.io └── statline.Rproj
+    ├── app.R                         <- Script to correctly start the app in shinyapps.io
+    ├── DESCRIPTION                   <- Project description
+    ├── inst
+    │   └── dashboard
+    │       └── www                   <- Folder with style-files, javascript and favicon
+    ├── LICENSE.md                    <- License
+    ├── man                           <- Help-files with explanation of all functions in this package
+    │   └── run_app.Rd
+    ├── NAMESPACE
+    ├── NEWS.md
+    ├── R
+    │   ├── run_app.R                 <- main function that starts the (dashboard) app
+    │   ├── ui.R                      <- functions for the user interface
+    │   └── util_modals.R             <- functions for the modals
+    ├── README.md
+    ├── README.Rmd                    <- readme file with explanation on this package
+    ├── rsconnect                     <- Folder with files needed to publish the app on shinyapps.io
+    └── statline.Rproj
 
 ## Licentie
 
